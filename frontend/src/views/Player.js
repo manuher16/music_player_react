@@ -1,6 +1,11 @@
 import "../styles/player.css";
 const Player = (props) => {
-
+    const styleControl1 = {
+        marginTop: '40px'
+    }
+    const styleControl2 = {
+        marginBottom: '40px'
+    }
 
     const play = () => {
         const audio = document.getElementById("audio");
@@ -17,7 +22,7 @@ const Player = (props) => {
     return (
         <div className="container">
             <div className="player">
-                <div className="player__controls">
+                <div className="player__controls" style={styleControl1} >
                     <div className="player__btn player__btn--small">
                         <i className="bis bi-arrow-left"></i>
                     </div>
@@ -43,7 +48,7 @@ const Player = (props) => {
                 <audio className="player__audio" controls id="audio" >
                     <source src="/assets/media/audio.mp3" type="audio/mpeg" />
                 </audio>
-                <div className="player__controls">
+                <div className="player__controls" style={styleControl2}>
                     <div className="player__btn player__btn--medium" >
                         <i className="bis bi-skip-backward"></i>
                     </div>
