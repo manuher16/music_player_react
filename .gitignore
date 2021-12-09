@@ -4,7 +4,9 @@
 output/
 
 # Temporary file directory
+/node_modules
+/public
 tmp/nanoc/
-
 # Crash Log
+audio.mp3
 crash.log
