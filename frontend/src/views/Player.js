@@ -38,8 +38,8 @@ const Player = (props) => {
                         className="player__img"
                     />
                 </div>
-                <h2 className="player__artist">Disclosure</h2>
-                <h3 className="player__song">Lach</h3>
+                <h2 className="player__artist">Reminber</h2>
+                <h3 className="player__song">The weekend</h3>
                 <input type="range" value="20" min="0" className="player__level" />
                 <div className="audio--duration">
                     <div className="start">00:01</div>

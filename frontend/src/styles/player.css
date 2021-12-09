@@ -88,6 +88,21 @@ img {
   height: 6px;
   border-radius: 3px;
 }
+.player__artist {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 20px 0px 0px 6px;
+}
+.player__song {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0.5;
+  margin: 0;
+}
 .player__level::-webkit-slider-thumb {
   -webkit-appearance: none;
   border-radius: 100%;
@@ -96,7 +111,7 @@ img {
   height: 18px;
   margin-top: -7px;
 }
-.audio-duration {
+.audio--duration {
   margin-top: -30px;
   display: flex;
   width: 78%;
