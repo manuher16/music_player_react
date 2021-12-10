@@ -24,11 +24,11 @@ const Player = (props) => {
             <div className="player">
                 <div className="player__controls" style={styleControl1} >
                     <div className="player__btn player__btn--small">
-                        <i className="bis bi-arrow-left"></i>
+                        <i className="bi bi-arrow-left"></i>
                     </div>
                     <h5 className="player__title">Playin Now</h5>
                     <div className="player__btn player__btn--small">
-                        <i className="bis bi-list"></i>
+                        <i className="bi bi-list"></i>
                     </div>
                 </div>
                 <div className="player__album">
@@ -50,14 +50,14 @@ const Player = (props) => {
                 </audio>
                 <div className="player__controls" style={styleControl2}>
                     <div className="player__btn player__btn--medium" >
-                        <i className="bis bi-skip-backward"></i>
+                        <i className="bi bi-skip-backward"></i>
                     </div>
                     <div className="player__btn player__btn--medium blue">
-                        <i className="bis bi-play play-btn" onClick={() => play}></i>
-                        <i className="bis bi-pause pause-btn hide" onClick={() => play}></i>
+                        <i className="bi bi-play play-btn" onClick={() => play}></i>
+                        <i className="bi bi-pause pause-btn hide" onClick={() => play}></i>
                     </div>
                     <div className="player__btn player__btn--medium">
-                        <i className="bis bi-skip-forward"></i>
+                        <i className="bi bi-skip-forward"></i>
                     </div>
                 </div>
             </div>

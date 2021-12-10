@@ -129,6 +129,7 @@ img {
 .player__btn--medium {
   min-height: 70px;
   min-width: 70px;
+  font-size: 1.8rem;
 }
 .blue {
   background-color: #5c87fe;
