@@ -27,8 +27,10 @@ const Player = (props) => {
                 setTimeSong(audio.currentTime);
                 console.log(time_song.value);
                 console.log(time_song.max);
+                setTimeLenghtSong(audio.duration)
                 time_song.value = audio.currentTime
                 time_song.max = audio.duration
+
 
             }, 1000);
             audio.play();
@@ -46,7 +48,7 @@ const Player = (props) => {
                     <div className="player__btn player__btn--small">
                         <i className="bi bi-arrow-left"></i>
                     </div>
-                    <h5 className="player__title">Playin Now</h5>
+                    <h5 className="player__title">Playing Now</h5>
                     <div className="player__btn player__btn--small">
                         <i className="bi bi-list"></i>
                     </div>
@@ -63,7 +65,7 @@ const Player = (props) => {
                 <input type="range" value={timeSong} min="0" max={timeLenghtSong} className="player__level" id="time_song" />
                 <div className="audio--duration">
                     <div className="start">0{parseInt(timeSong / 60)}:{parseInt(timeSong % 60)}</div>
-                    <div className="end">0{parseInt(timeLenghtSong / 60)}:{parseInt(timeLenghtSong % 60)}</div>
+                    <div className="end">0{timeLenghtSong ? parseInt(timeLenghtSong / 60) : "0"}:{timeLenghtSong ? parseInt(timeLenghtSong % 60) : '00'}</div>
                 </div>
                 <audio className="player__audio" controls id="audio" >
                     <source src="/assets/media/audio.mp3" type="audio/mpeg" />
