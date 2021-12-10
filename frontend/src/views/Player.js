@@ -38,6 +38,9 @@ const Player = (props) => {
                 setTimeLenghtSong(audio.duration)
                 time_song.value = audio.currentTime
                 time_song.max = audio.duration
+                if (audio.ended) {
+                    setPlay(false)
+                }
             }, 1000);
             audio.play();
             setPlay(true);
